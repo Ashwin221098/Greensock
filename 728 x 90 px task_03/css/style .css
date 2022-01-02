@@ -1,0 +1,129 @@
+  *{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  
+  body{
+      font-size: 10px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Oswald', sans-serif;
+  }
+  
+  #container{
+      width: 728px;
+      height: 90px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      background-color: #fff;
+      margin: 0 auto;
+  }
+  
+  #border{
+      width: 728px;
+      height: 90px;
+      border: 1px solid #000;
+      z-index: 999;
+      opacity: 0.3;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+  
+  /* bg image  */
+  #photo{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 235px;
+      height: auto;
+      transform: rotatex(-90deg);
+      transform-origin: bottom;
+  }
+  #textbg{
+      position: absolute;
+      top: 0px;
+      left: 113px;
+      width: auto;
+      height: 84px;
+      transform: rotatex(90deg);
+      transform-origin: top;
+  }
+  
+  /* logo   */
+   #logo{
+      position: absolute;
+      top: 35px;
+      left: 22px;
+      width: 71px;
+      height: auto;
+      transform: scale(0);
+  }
+  
+  /* frame text's */
+  #text1, #text2, #text3, #text4{
+      position: absolute;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+  }
+  #text1{
+      top: 5px;
+      left: 148px;
+      font-size: 23px;
+      font-weight: 500;
+      transform: rotateX(90deg);
+      transform-origin: top center;
+  }
+  #text2{
+      top: 32px;
+      left: 148px;
+      font-size: 16px;
+      color: #f2672e;
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  #text3{
+      top: 54px;
+      left: 147px;
+      font-size: 17px; 
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  #text4{
+      top: 14px;
+      left: 283px;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: 'Raleway', sans-serif;
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  
+  /* circle */
+  #circle{
+      position: absolute;
+      right: 223px;
+      width: 90px;
+      height: auto;
+      opacity: 0;
+      transform: rotate(720deg);
+  }
+  #button{
+      position: absolute;
+      top: 27px;
+      right: 0px;
+      width: 105px;
+      height: auto;
+      transform: scale(0);
+  }
+
+  
+  
+  
+  
+  
+  

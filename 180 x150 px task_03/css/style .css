@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+#container{
+    width: 180px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#border{
+    width: 180px;
+    height: 150px;
+    border: 1px solid #000;
+    z-index: 999;
+    opacity: 0.3;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* bg image  */
+#photo{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 88px;
+    height: auto;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+}
+#textbg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    height: 150px;
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+
+/* logo  */
+#logo{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 31px;
+    height: auto;
+    transform: scale(0);
+}
+
+/* frame text's */
+#text1, #text2, #text3{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+#text1{
+    top: 7px;
+    right: 16px;
+    transform: rotateX(89deg);
+    transform-origin: top center;
+}
+#text2{
+    top: 32px;
+    right: 17px;
+    font-size: 15px;
+    color: #f2672e;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+#text3{
+    top: 50px;
+    right: 16px;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+/* circle */
+#circle{
+    position: absolute;
+    top: 81px;
+    right: 16px;
+    width: 59px;
+    height: auto;
+    opacity: 0;
+    transform: rotate(720deg);
+}
+
+
+
+
