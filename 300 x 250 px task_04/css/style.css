@@ -40,6 +40,7 @@
       right: 0;
       width: 224px;
       height: auto;
+      transform: translate(220px, -220px)
   }
   #shape2{
       position: absolute;
@@ -47,6 +48,7 @@
       right: 0;
       width: 130px;
       height: auto; 
+      opacity: 0;
   }
   #img1, #img2, #img3{
       position: absolute;
@@ -55,6 +57,9 @@
       width: 220px;
       height: auto; 
       opacity: 0;
+  }
+  #img1{
+      transform: translate(220px, -220px);
   }
   #txt1{
       position: absolute;
@@ -88,6 +93,8 @@
       left: 30px;
       width: auto;
       height: 42px;      
+      opacity: 0;
+      transform: translateY(-30px);
   }
   #logo1{
       position: absolute;
@@ -96,13 +103,16 @@
       font-family: 'Oswald', sans-serif;
       font-size: 18px;
       color: #fff;
+      opacity: 0;
+      transform: translateY(-30px);
   }
       
   /* frame text's */
-  #text1, #text2, #text3{
+  #text1, #text2a, #text2b, #text3{
       position: absolute;
       color: #fff;
       font-size: 15px;
+      opacity: 0;
   }
   #text1{
       top: 80px;
@@ -111,12 +121,21 @@
   #underline{
       position: absolute;
       border-bottom: 3px solid #d5b73d;
-      width: 28px;
+      width: 0px;
       top: 104px;
       left: 14px;
   }
-  #text2{
+  #text2a{
       top: 112px;
+      line-height: 1;
+      left: 14px;
+      letter-spacing: 1px;
+      color: #E3BD3B;
+      font-size: 23px;
+      font-weight: 500;
+  }
+  #text2b{
+      top: 135px;
       line-height: 1;
       left: 14px;
       letter-spacing: 1px;
@@ -127,6 +146,7 @@
   #text3{
       top: 160px;
       left: 14px;
+      transform: translateY(-30px);
   }
 
   /* cta */
@@ -139,6 +159,8 @@
       padding: 5px 23px;
       text-align: center;
       font-size: 11px;
+      opacity: 0;
+      transform: translateX(-30px);
   }
  
   /* url */
@@ -148,6 +170,8 @@
       right: 26px;
       color: #fff;
       font-size: 13px;
+      opacity: 0;
+      transform: translateX(30px);
     }
  
   
