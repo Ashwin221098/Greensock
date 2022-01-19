@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#container{
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#border{
+    width: 728px;
+    height: 90px;
+    border: 1px solid #000;
+    z-index: 999;
+    opacity: 0.3;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* bg image  */
+#photo{
+    position: absolute;
+    top: 0;
+    right: 121px;
+    width: auto;
+    height: 90px;
+    transform: translateX(-607px);
+}
+#shape1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 90px;
+    transform: translateX(-441px);
+}
+#shape2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 90px;
+    transform: translateX(160px);
+}
+
+/* logo  */
+#logo{
+    position: absolute;
+    top: 27px;
+    left: 21px;
+    width: 95px;
+    height: auto;
+    transform: scale(0);
+}
+
+/* frame copy's  */
+#text1, #text2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0;
+}
+#text1{
+    position: absolute;
+    top: 11px;
+    left: 137px;
+    color: #eeba30;
+    transform: translateY(-20px);
+}
+#text2{
+    position: absolute;
+    top: 31px;
+    left: 138px;
+}
+#text3{
+    position: absolute;
+    top: 52px;
+    left: 138px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+#text3a, #text3b{
+    opacity: 0;
+}
+
+/* CTA buttom  */
+#cta{
+    position: absolute;
+    top: 31px;
+    right: 14px;
+    width: 103px;
+    height: auto;
+    opacity: 0;
+    transform: scale(1.3);
+}
+

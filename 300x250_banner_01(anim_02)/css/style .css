@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#container{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.hide{
+    opacity: 0;
+}
+#border{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #000;
+    z-index: 999;
+    opacity: 0.3;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 250px;
+  
+}
+#topline, #bottomline{
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    background-color: #88743f;
+}
+#topline{
+    top: 0;
+    left: 10px;
+}
+#bottomline{
+    bottom: 0;
+    right: 10px;
+}
+#logo{
+    position: absolute;
+    top: 16px;
+    left: 152px;
+    width: 84px;
+    height: auto;
+}
+#text1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    transform: translateX(200px);
+}
+#text2{
+    position: absolute;
+    top: 77px;
+    right: 13px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    transform: translatey(200px);
+}
+#text3{
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: -0.1px;
+    line-height: 16px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translatey(30px);
+}
+#cta{
+    position: absolute;
+    top: 160px;
+    right: 35px;
+    width: 108px;
+    height: 28px;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #fff;
+    font-weight: 500;
+    padding: 0px 10px;
+    background-color: #88743f;
+    border-radius: 8px;
+    line-height: 28px;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+#url{
+    position: absolute;
+    top: 224px;
+    right: 18px;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(30px);
+}
